@@ -18,8 +18,14 @@ Petit utilitaire en .NET 8 qui génère des nombres pseudo-aléatoires via `Rand
 	- Add tests for invalid inputs (min < 0, max > 255) and for the RNG loop behavior.
 
 - **Useful links (local artifact):**
-	- Summary XML: [coverage-report-5766319688/coverage-report/Summary.xml](coverage-report-5766319688/coverage-report/Summary.xml#L1-L20)
-	- Detailed report: [coverage-report-5766319688/coverage-report/PseudoRandomPrimeGeneratorNet8_Program.xml](coverage-report-5766319688/coverage-report/PseudoRandomPrimeGeneratorNet8_Program.xml#L1-L120)
+- **Useful links / how to get the coverage artifact:**
+	- The coverage artifact (`coverage-report`) is published on each CI run. Open the repository Actions page, select the latest run for the `.NET Build` workflow and download the `coverage-report` artifact from the Artifacts section.
+	- CLI (GitHub CLI) to download the artifact:
+
+```bash
+gh run list --workflow dotnet.yml
+gh run download <run-id> --name coverage-report
+```
 
 - **Next steps to improve coverage:**
 	1. Extract logic from `Main` into a testable method (already added `GeneratePrimes(Func<int>, int)`).
