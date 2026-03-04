@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography;
+﻿using System;
+using System.Security.Cryptography;
 
 namespace PseudoRandomPrimeGeneratorNet8
 {
@@ -80,6 +81,27 @@ namespace PseudoRandomPrimeGeneratorNet8
       } while (result < min || result > max);
 
       return result;
+    }
+
+    /// <summary>
+    /// Generate a sequence of prime numbers using a supplied random provider.
+    /// The provider must return values already constrained to the desired range.
+    /// </summary>
+    public static IEnumerable<int> GeneratePrimes(Func<int> randomProvider, int count)
+    {
+      if (randomProvider == null) throw new ArgumentNullException(nameof(randomProvider));
+      if (count < 0) throw new ArgumentOutOfRangeException(nameof(count));
+
+      int found = 0;
+      while (found < count)
+      {
+        int candidate = randomProvider();
+        if (IsPrime(candidate))
+        {
+          yield return candidate;
+          found++;
+        }
+      }
     }
   }
 }

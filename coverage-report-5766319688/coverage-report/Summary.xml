@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>3/4/2026 - 7:20:49 PM</Generatedon>
+    <Parser>Cobertura</Parser>
+    <Assemblies>1</Assemblies>
+    <Classes>1</Classes>
+    <Files>1</Files>
+    <Coveredlines>12</Coveredlines>
+    <Uncoveredlines>22</Uncoveredlines>
+    <Coverablelines>34</Coverablelines>
+    <Totallines>85</Totallines>
+    <Linecoverage>35.2</Linecoverage>
+    <Coveredbranches>18</Coveredbranches>
+    <Totalbranches>32</Totalbranches>
+    <Branchcoverage>56.2</Branchcoverage>
+    <Coveredmethods>2</Coveredmethods>
+    <Totalmethods>3</Totalmethods>
+    <Methodcoverage>66.6</Methodcoverage>
+  </Summary>
+  <Coverage>
+    <Assembly name="PseudoRandomPrimeGeneratorNet8" classes="1" coverage="35.2" coveredlines="12" coverablelines="34" totallines="85" branchcoverage="56.2" coveredbranches="18" totalbranches="32" coveredmethods="2" totalmethods="3" methodcoverage="66.6">
+      <Class name="PseudoRandomPrimeGeneratorNet8.Program" coverage="35.2" coveredlines="12" coverablelines="34" totallines="85" branchcoverage="56.2" coveredbranches="18" totalbranches="32" coveredmethods="2" totalmethods="3" methodcoverage="66.6" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>
