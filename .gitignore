@@ -41,3 +41,7 @@ _ReSharper*/
 
 # StyleCop
 StyleCopReport.xml
+
+# CI artifacts (workflow logs)
+actions-logs-*/
+*.zip
