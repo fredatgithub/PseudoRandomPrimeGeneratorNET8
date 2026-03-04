@@ -1,5 +1,5 @@
 
-# [![.NET Build](https://github.com/fredatgithub/PseudoRandomPrimeGeneratorNET8/actions/workflows/dotnet.yml/badge.svg)](https://github.com/fredatgithub/PseudoRandomPrimeGeneratorNET8/actions) [![Codecov](https://codecov.io/gh/fredatgithub/PseudoRandomPrimeGeneratorNET8/branch/main/graph/badge.svg)](https://codecov.io/gh/fredatgithub/PseudoRandomPrimeGeneratorNET8)
+# [![.NET Build](https://github.com/fredatgithub/PseudoRandomPrimeGeneratorNET8/actions/workflows/dotnet.yml/badge.svg)](https://github.com/fredatgithub/PseudoRandomPrimeGeneratorNET8/actions) [![Codecov](https://img.shields.io/codecov/c/gh/fredatgithub/PseudoRandomPrimeGeneratorNET8?branch=main)](https://codecov.io/gh/fredatgithub/PseudoRandomPrimeGeneratorNET8)
 
 # PseudoRandomPrimeGeneratorNET8
 
