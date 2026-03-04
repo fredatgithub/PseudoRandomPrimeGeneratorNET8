@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 
 namespace PseudoRandomPrimeGeneratorNet8
 {
-  internal class Program
+  public class Program
   {
     static void Main()
     {
