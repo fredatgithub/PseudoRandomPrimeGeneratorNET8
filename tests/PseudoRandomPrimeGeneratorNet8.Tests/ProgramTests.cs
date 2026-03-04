@@ -18,8 +18,8 @@ public class ProgramTests
   [Fact]
   public void GenerateRndNumberUsingCrypto_MinEqualsMax_ReturnsMin()
   {
-    int min = 42;
-    int max = 42;
+    const int min = 42;
+    const int max = 42;
     int result = Program.GenerateRndNumberUsingCrypto(min, max);
     Assert.Equal(min, result);
   }
