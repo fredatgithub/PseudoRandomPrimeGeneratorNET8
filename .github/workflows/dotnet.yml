@@ -11,6 +11,8 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
@@ -44,11 +46,18 @@ jobs:
             **/coverage.cobertura.xml
             coverage-report
 
+      - name: Configure git (required for Codecov commit operations)
+        if: success()
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
       - name: Upload coverage to Codecov
         if: success()
         uses: codecov/codecov-action@v4
         with:
           files: '**/coverage.cobertura.xml'
-          fail_ci_if_error: true
+          # avoid failing entire CI if Codecov uploader has a non-critical error
+          fail_ci_if_error: false
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
