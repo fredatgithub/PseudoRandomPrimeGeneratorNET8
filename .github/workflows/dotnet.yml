@@ -24,7 +24,7 @@ jobs:
         run: dotnet build PseudoRandomPrimeGeneratorNet8.sln --configuration Release --no-restore
 
       - name: Test (if any)
-        run: dotnet test PseudoRandomPrimeGeneratorNet8.sln --no-build --verbosity normal --collect:"XPlat Code Coverage"
+        run: dotnet test PseudoRandomPrimeGeneratorNet8.sln --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage"
         continue-on-error: false
 
       - name: Convert coverage to opencover
